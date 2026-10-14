@@ -3,7 +3,8 @@
 Created by Paul Penning.
 HTTP responses are observations; confirm WAF decisions using WAF logs.
 
-
+⚠️ For authorized security testing only.
+Use only against systems you own or have explicit permission to test. This tool is not intended for malicious use. Use at your own risk.
 """
 
 import csv
