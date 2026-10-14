@@ -1,7 +1,9 @@
 """Interactive HTTP probes for authorized WAF validation.
 
-Created by Paul Penning on 2026-10-13.
+Created by Paul Penning.
 HTTP responses are observations; confirm WAF decisions using WAF logs.
+
+
 """
 
 import csv
