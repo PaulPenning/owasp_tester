@@ -108,7 +108,7 @@ def send_probe(curl_path, target, test, payload, marker, request_number):
         "--connect-timeout", "10", "--max-time", "15",
         "--proto", "=http,https",
         "-H", "Accept: */*",
-        "-H", "User-Agent: Hoppenbrouwers-WAF-Validation/1.0",
+        "-H", "User-Agent: WAF-Validation/1.0",
         "--get", "--data-urlencode", f"waf_test_id={marker}",
         "--data-urlencode", f"waf_probe={payload}",
         "-w", METADATA_PREFIX + "%{http_code}\t%{remote_ip}\t%{time_total}\n",
@@ -231,7 +231,7 @@ def run_tests(curl_path, targets, tests, transactions, interval, run_marker,
 def main():
     """Collect settings, then run menu selections until exit or interruption."""
     print("""OWASP WAF Test Tool
-Created by: Paul Penning | Created on: 2026-10-13
+Created by: Paul Penning
 For authorized security testing only.
 Use only against systems you own or have explicit permission to test.
 """)
